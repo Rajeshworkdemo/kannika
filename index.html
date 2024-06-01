@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #ffecb3; /* light yellow for the main page */
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background-color: #d81b60; /* dark pink */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c2185b; /* darker pink */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 100%;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            margin: auto; /* Center the container */
+            overflow: auto;
+            background-color: #df24a1; /* fallback color */
+            background-image: url('images/image8.jpg'); /* Background image */
+            background-size: cover; /* Cover the container */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* No repeat */
+            color: white; /* White text color */
+        }
+
+        h1 {
+            color: #510445; /* dark pink */
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: rgb(236, 11, 187); /* Light pink text */
+            margin: 10px 0;
+        }
+
+        .gallery img {
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #ad1457; /* dark pink */
+        }
+
+        #surprise {
+            display: none; /* Remove surprise button and text */
+        }
+
+        .animated-heart {
+            position: fixed;
+            top: -10px; /* Start from top of the page */
+            left: -10px; /* Start from left of the page */
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="showAnniversaryMessage()">Click Here My Love</button>
+    </div>
+
+    <div class="container text-center mt-5 p-4 rounded shadow animate__animated animate__fadeIn" id="anniversaryMessage" style="display: none;">
+        <h1 class="animate__animated animate__bounceInDown">A VERY SPECIAL DAY, MY LOVE KANNIKA!</h1>
+        <p class="animate__animated animate__fadeInUp">Today marks another beautiful year we've spent together. I cherish every moment we've shared and look forward to many more.</p>
+        <p class="animate__animated animate__fadeInUp"><strong>Here are some of my favorite memories with you:</strong></p>
+        <div class="row gallery justify-content-center">
+            <div class="col-md-4 mb-3">
+                <img src="images/image5.jpg" alt="Memory 1" class="img-fluid rounded animate__animated animate__zoomIn">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="images/image1.jpg" alt="Memory 2" class="img-fluid rounded animate__animated animate__zoomIn animate__delay-1s">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="images/image2.jpg" alt="Memory 3" class="img-fluid rounded animate__animated animate__zoomIn animate__delay-2s" style="width: 100%; height: auto;">
+            </div>
+        </div>
+        <p class="animate__animated animate__fadeInUp"><strong>Chinni... Do you remember?</strong></p>
+        <p class="message animate__animated animate__fadeInUp">Our story begins with two different backgrounds: you, Kannada, from Mudigere, and I, Telugu, from Bengaluru. Our first kiss, on June 1st, 2023, at 7:40, marked our first meeting too—a day we'll always remember. Despite the struggles to get there, I traveled 60 kilometers at night just to see you. That day, sleep didn't come to me, but happiness did. It was the happiest day of my life, one I'll never forget. I love you forever and ever my Chinni.</p>
+    </div>
+
+    <script>
+        function showAnniversaryMessage() {
+            var messageElement = document.getElementById('anniversaryMessage');
+            messageElement.style.display = 'block';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
